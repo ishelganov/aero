@@ -1,0 +1,985 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+  url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: 'WebSymbolsLigaRegular';
+  src: url('../fonts/WebSymbolsLigaRegular/websymbolsligaregular.eot');
+  src: url('../fonts/WebSymbolsLigaRegular/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/WebSymbolsLigaRegular/websymbolsligaregular.woff') format('woff'),
+  url('../fonts/WebSymbolsLigaRegular/websymbolsligaregular.ttf') format('truetype'),
+  url('../fonts/WebSymbolsLigaRegular/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+}
+* {
+  font-family: 'RobotoMedium', sans-serif;
+  font-size: 18px;
+  /*line-height: 1.22;*/
+  line-height: 1.34;
+  color: #444;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+.container:after, .row:after, ul:after, .clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+[class*="col"] {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 18px;
+}
+
+.col-1 {  width: 8.33%;   }
+.col-2 {  width: 16.66%; }
+.col-3 {  width: 25%;      }
+.col-4 {  width: 33.33%; }
+.col-5 {  width: 41.66%; }
+.col-6 {  width: 50%;      }
+.col-7 {  width: 58.33%; }
+.col-8 {  width: 66.66%; }
+.col-9 {  width: 75%;      }
+.col-10 {  width: 83.11%; }
+.col-11 {  width: 91.66%; }
+.col-12 {  width: 100%;    }
+.col-offset-1 {  margin-left: 8.33%;   }
+.col-offset-2 {  margin-left: 16.66%; }
+.col-offset-3 {  margin-left: 25%;      }
+.col-offset-4 {  margin-left: 33.33%; }
+.col-offset-5 {  margin-left: 41.66%; }
+.col-offset-6 {  margin-left: 50%;      }
+
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+h2:after {
+  display: block;
+  width: 62px;
+  height: 6px;
+  margin-top: 19px;
+  content: '';
+  background-color: #3e98d7;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 15px;
+  padding-left: 58px;
+}
+
+p {
+  font-family: 'RobotoRegular', sans-serif;
+}
+.horizontal-line:after {
+  content: '';
+  display: block;
+  width: 1140px;
+  height: 1px;
+  background-color: #cccccc;
+}
+body {
+  min-width: 1200px;
+}
+
+/*---------------HEADER-BLOCK---------------*/
+header, footer {
+  background-color: #2c2c2c;
+  padding: 20px 0 16px 0;
+}
+
+.logotype {
+  font-size: 22px;
+  color: #fff;
+  line-height: 34px;
+}
+
+.main-nav__list {
+  margin: 0;
+  margin-top: 4px;
+  padding-left: 76px;
+}
+
+.main-nav__item {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__item a {
+  padding: 4px 6px 4px 6px;
+  border: 1px solid transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav__item a:hover {
+  border: 1px solid #fff;
+}
+
+
+/*---------------PROMO-BLOCK---------------*/
+.promo {
+  padding-top: 129px;
+  padding-bottom: 27px;
+  background-image: url(../img/promo__bcg-air-balloons.jpg);
+  background-position: 32% 0;
+  text-align: center;
+}
+
+.promo__title {
+  margin-top: 42px;
+  padding-left: 6px;
+  padding-bottom: 0;
+  font-size: 66px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #fff;
+}
+
+/*"Подробнее"*/
+.promo__link {
+  display: inline-block;
+  padding: 6.5px 12px 7.5px 12px;
+  margin-left: 10px;
+  margin-top: 136px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.promo__pointer-wrap {
+  margin-top: 35px;
+}
+
+/*Arrow*/
+.arrow-down {
+  display: inline-block;
+  width: 18px;
+  height: 29px;
+  margin-left: 6px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -723px -5px;
+
+}
+
+/*---------------FEATURE-BLOCK---------------*/
+.features {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+/*Reset padding-left UL*/
+.features__list {
+  padding: 0;
+  margin-top: 14px;
+}
+
+.features__item {
+  list-style: none;
+  position: relative;
+  line-height: 1.23;
+}
+
+.features__item--finger {
+  padding-left: 109px;
+}
+
+.features__item--finger:before {
+  content: '';
+  background-image: url(../img/spritesheet.png);
+  width: 56px;
+  height: 58px;
+  background-position: -393px -5px;
+  position: absolute;
+  left: 10.7%;
+  top: -23%;
+}
+
+.features__item--glasses {
+  padding-left: 112px;
+}
+
+.features__item--glasses:before {
+  content: '';
+  background-image: url(../img/spritesheet.png);
+  width: 75px;
+  height: 28px;
+  background-position: -459px -5px;
+  position: absolute;
+  left: 5.5%;
+  top: 19%;
+}
+
+.features__item--photo {
+  padding-left: 121px;
+  padding-right: 55px;
+}
+
+.features__item--photo:before {
+  content: '';
+  background-image: url(../img/spritesheet.png);
+  width: 65px;
+  height: 50px;
+  background-position: -544px -5px;
+  position: absolute;
+  left: 10.7%;
+  top: -10%;
+}
+
+.features__item--binoculars {
+  padding-left: 122px;
+}
+
+.features__item--binoculars:before {
+  float: left;
+  content: '';
+  background-image: url(../img/spritesheet.png);
+  width: 72px;
+  height: 34px;
+  background-position: -311px -5px;
+  position: absolute;
+  left: 8.5%;
+  top: 8%;
+}
+
+/*---------------ABOUT-BLOCK---------------*/
+.about .row {
+  padding-bottom: 106px;
+}
+
+.about h2 {
+  padding-top: 11px;
+  padding-left: 4px;
+}
+
+.about__text {
+  padding-top: 17px;
+  line-height: 24px;
+  padding-left: 2px;
+}
+
+/*выравнивание видео*/
+.about .col-8 {
+  padding-left: 22px;
+}
+
+.about__video {
+  margin-top: 41px;
+}
+
+/*тень видео*/
+.video-balloons {
+  box-shadow: 0 30px 0 -20px #e6e6e6;
+}
+
+/*---------------GALLERY-BLOCK---------------*/
+.gallery {
+  padding-top: 74px;
+  text-align: center;
+}
+
+.gallery h2:after {
+  margin-left: 542px;
+}
+
+.owl-carousel {
+  padding-top: 7px;
+  /*margin-top: 68px;*/
+}
+
+/*---------------FLIGHT-PLAN-BLOCK---------------*/
+.plan {
+  position: relative;
+  height: 657px;
+  background-image: url(../img/bcg-mountin.jpg);
+  background-position: 30% 100%;
+  background-repeat: no-repeat;
+}
+
+/*Пунктирная линия*/
+.plan:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 72%;
+  height: 176px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -5px -97px;
+  top: 252px;
+  left: 14.3%;
+}
+
+/*Заголовок "Как проходят полеты"*/
+.plan h2 {
+  margin-top: 49.5px;
+  padding-left: 413px;
+}
+
+/*Синяя линия*/
+.plan h2:after {
+  margin-left: 129px;
+}
+
+/*Псевдоэлемент красный шар*/
+.balloon:after {
+  display: block;
+  width: 44px;
+  height: 65px;
+  padding-top: 9px;
+  content: '';
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/spritesheet.png);
+  background-position: -257px -5px;
+}
+
+.plan__step1,
+.plan__step2,
+.plan__step3,
+.plan__step4,
+.plan__step5 {
+  position: absolute;
+  display: inline-block;
+  color: #454545;
+}
+
+.plan__step1 {
+  top: 290px;
+  left: 231px;
+}
+
+.plan__step1:after {
+  content: '1';
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.plan__step2 {
+  top: 222px;
+  left: 491px;
+  width: 92px;
+  text-align: center;
+  line-height: 1.23;
+}
+
+.plan__step2:after {
+  content: '2';
+  margin-top: 14px;
+  margin-left: 22px;
+}
+
+.plan__step3 {
+  top: 114px;
+  left: 765px;
+}
+
+.plan__step3:after {
+  content: '3';
+  margin-top: 11px;
+  margin-left: 8px;
+}
+
+.plan__step4 {
+  top: 239px;
+  left: 1009px;
+}
+
+.plan__step4:after {
+  content: '4';
+  margin-top: 10px;
+  margin-left: 27px;
+}
+
+.plan__step5 {
+  top: 285px;
+  left: 1287px;
+}
+
+.plan__step5:after {
+  content: '5';
+  margin-top: 12px;
+  margin-left: 17px;
+}
+
+/*---------------TIMER-BLOCK---------------*/
+.timer {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  background-color: #f2f2f2;
+}
+
+.timer__title,
+.timer__numbers,
+.timer__text {
+  color: #26668e;
+}
+
+.timer__title,
+.timer__numbers {
+  font-size: 32px;
+}
+
+.timer__text {
+  font-size: 22px;
+}
+
+.timer__title {
+  padding-left: 4px;
+}
+
+.clockdiv,
+.clockdiv div{
+  display: inline-block;
+}
+
+.clockdiv {
+  margin-left: 300px;
+}
+
+.timer__wrap-block {
+  margin-right: 15px;
+}
+
+.timer__wrap-block:last-child {
+  margin-right: 0;
+}
+
+/*---------------PRICE-BLOCK---------------*/
+.order {
+  padding-top: 90px;
+  padding-left: 7px;
+}
+
+.order .row {
+  padding-bottom: 57px;
+}
+
+/*Заголовок Рассчитать стоимость*/
+.order h2 {
+  margin: 0;
+}
+
+.order__text1 {
+  margin-top: 44px;
+}
+
+.order__text2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/*Форма регистрации*/
+.form-registration {
+  margin-top: 3px;
+}
+
+.form-registration-wrapper {
+  margin-bottom: 20px;
+}
+
+.form-registration-wrapper:nth-child(4) {
+  margin-bottom: 37px;
+}
+
+.form-registration__text {
+  font-family: 'RobotoRegular', sans-serif;
+  float: left;
+  margin-top: 6px;
+}
+
+span.form-registration__text {
+  font-family: 'RobotoMedium', sans-serif;
+  margin-top: 9px;
+}
+
+.form-registration__text--price {
+  font-size: 38px;
+  line-height: 24px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 14px;
+  color: #f97e7e;
+}
+
+.form-registration input,
+.form-registration select {
+  font-family: 'RobotoRegular', sans-serif;
+  float: right;
+  box-sizing: border-box;
+  width: 355px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+
+/*Отступ слева в поле "Имя Фамилия" и "Телефон"*/
+.form-registration__field--name,
+.form-registration__field--phone-number {
+  padding-left: 38px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper:before {
+  position: absolute;
+  top: 12px;
+  left: 209px;
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  content: '';
+}
+
+.form__icon-person:before {
+  width: 15px;
+  height: 15px;
+  background-position: -669px -5px;
+}
+
+.form__icon-phone:before {
+  width: 19px;
+  height: 19px;
+  background-position: -694px -5px;
+}
+
+.form-registration .form-registration__submit {
+  width: 165px;
+  color: #fff;
+  background-color: #46b0dc;
+}
+
+.form-registration__submit:focus {
+  outline: none;
+}
+
+.form-registration__submit:hover {
+  cursor: pointer;
+}
+
+/*---------------PAYMENT-BLOCK---------------*/
+.payment {
+  padding-top: 46px;
+  padding-bottom: 56px;
+}
+
+.payment__methods {
+  padding-top: 3px;
+  padding-right: 75px;
+  padding-left: 21px;
+}
+
+.payment h3:nth-of-type(1),
+.payment h3:nth-of-type(2) {
+  margin-bottom: 29px;
+}
+
+.payment h3:nth-of-type(1) {
+  margin-top: 35px;
+}
+
+.payment h3:nth-of-type(2) {
+  margin-top: 54px;
+}
+
+.payment__list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.payment__list li {
+  font-family: 'RobotoRegular', sans-serif;
+}
+
+/*Дефис*/
+.payment__list li:before {
+  display: inline-block;
+  width: 11px;
+  height: 1px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  content: '';
+  border: 1px solid #fff;
+  background-color: #444;
+}
+
+.payment__email {
+  font-family: 'RobotoRegular', sans-serif;
+  text-decoration: underline;
+}
+
+.payment__email--underline-none {
+  font-family: 'RobotoRegular', sans-serif;
+  display: block;
+  margin-left: 21px;
+}
+
+/*Частные вопросы*/
+.questions__list {
+  margin-top: 5px;
+  padding-left: 21px;
+  padding-right: 35px;
+}
+
+.questions__list h2 {
+  margin-top: 23px;
+  margin-bottom: 44px;
+}
+
+.questions__list p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 2px;
+  padding-left: 79px;
+}
+
+.questions__item {
+  position: relative;
+  margin-bottom: 58px;
+}
+
+.questions__item:nth-of-type(2) {
+  margin-bottom: 33px;
+}
+
+.questions__item:nth-of-type(3) {
+  margin-bottom: 35px;
+}
+
+.questions__item:last-child h4 {
+  margin-bottom: 10px;
+}
+
+.questions__item:before {
+  display: inline-block;
+  width: 40px;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  content: '';
+  background-image: url(../img/spritesheet.png);
+  background-position: -619px -5px;
+}
+
+/*---------------STATISTICS-BLOCK---------------*/
+.statistics {
+  padding-top: 54px;
+  padding-bottom: 44px;
+  background-image: url(../img/statitstics--bcg.jpg);
+}
+
+.statistics__list {
+  padding-left: 36px;
+}
+
+.statistics__numbers,
+.statistics__text {
+  color: #fff;
+}
+
+.statistics__item {
+  line-height: 1.22;
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.ellipse {
+  box-sizing: border-box;
+  width: 160px;
+  height: 160px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+}
+
+.statistics__numbers {
+  display: block;
+  margin-top: 46px;
+  font-size: 42px;
+}
+
+.statistics__text {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.statistics__item:first-child {
+  margin-right: 40px;
+}
+
+.statistics__item:nth-of-type(2) {
+  margin-right: 43px;
+}
+
+.statistics__item:nth-of-type(2) .ellipse {
+  margin-left: 35px;
+}
+
+.statistics__item:nth-of-type(3) {
+  margin-right: 76px;
+}
+
+.statistics__item:last-child {
+  margin-right: 0;
+}
+
+/*---------------INSTRUCTORS-BLOCK---------------*/
+.instructors {
+  padding-top: 69px;
+  padding-bottom: 81px;
+  text-align: center;
+}
+
+.instructors h2:after {
+  margin-top: 29px;
+  margin-left: 559px;
+}
+
+.instructors .col-3 {
+  position: relative;
+}
+
+.instructors__item {
+  margin-top: 223px;
+  margin-left: 5px;
+}
+
+.instructors__item:before {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 160px;
+  top: 33px;
+  left: 70px;
+  content: '';
+}
+
+.instructors__item--sinior-pilot:before {
+  background-image: url(../img/instructors__photo1.png);
+}
+
+.instructors__item--second-pilot:before {
+  background-image: url(../img/instructors__photo2.png);
+}
+
+.instructors__item--airtraffic-controller:before {
+  background-image: url(../img/instructors__photo3.png);
+}
+
+.instructors__item--aircraft:before {
+  background-image: url(../img/instructors__photo4.png);
+}
+
+.instructors__item:hover:before {
+  width: 160px;
+  height: 160px;
+  background-position: -5px -283px;
+  background-image: url(../img/spritesheet.png);
+  cursor: pointer;
+}
+
+.instructors__name {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+/*---------------REVIEWS-BLOCK---------------*/
+.reviews {
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.reviews h2:after {
+  margin-top: 29px;
+  margin-left: 560px;
+}
+
+.reviews__item {
+  position: relative;
+  margin-top: 145px;
+}
+
+.reviews__item:before {
+  position: absolute;
+  display: block;
+  width: 98px;
+  height: 98px;
+  top: -121px;
+  left: 229px;
+  content: '';
+}
+
+.reviews__item--first-review:before {
+  background-image: url(../img/reviews__photo1.png);
+}
+
+.reviews__item--second-review:before {
+  background-image: url(../img/reviews__photo2.png);
+}
+
+.reviews__name {
+  font-size: 22px;
+  color: #353535;
+}
+
+.reviews__item p {
+  margin-top: 14px;
+}
+
+/*---------------CONTACTS-BLOCK---------------*/
+.contacts {
+  position: relative;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 60px;
+  background-image: url(../img/contacts--bcg.jpg);
+}
+
+.contacts .col-4 {
+  position: relative;
+  text-align: left;
+  margin-top: 56px;
+  padding-left: 78px;
+}
+
+.contacts .col-4:last-child {
+  padding-left: 18px;
+}
+
+.contacts .col-4:before {
+  position: absolute;
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  content: '';
+}
+
+/*Иконки гео*/
+.contacts .col-4:nth-of-type(1):before,
+.contacts .col-4:nth-of-type(2):before {
+  top: 9px;
+  left: 22px;
+  width: 35px;
+  height: 50px;
+  background-position: -107px -5px;
+}
+
+.contacts .col-4:nth-of-type(3):before {
+  top: 11px;
+  left: 26px;
+  width: 23px;
+  height: 17px;
+  background-position: -152px -5px;
+}
+
+.contacts h3 {
+  margin-bottom: 11px;
+  padding-left: 6px;
+}
+
+.contacts h3:before {
+  position: absolute;
+  display: block;
+  width: 62px;
+  height: 62px;
+  top: 55px;
+  left: 767px;
+  background-image: url(../img/spritesheet.png);
+  background-position: -185px -5px;
+  content: '';
+}
+
+.address {
+  font-style: normal;
+  padding-left: 6px;
+  color: #616161;
+}
+
+.contacts__data {
+  font-size: 22px;
+  color: #2b2b2b;
+}
+
+.contacts__address, .contacts__time-work {
+  font-size: 20px;
+  margin-left: 2px;
+  color: #525252;
+}
+
+.contacts__address {
+  margin-top: 7px;
+}
+
+.contacts__phone-number {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-left: 2px;
+  color: #292929;
+}
+
+.contacts__email a {
+  font-size: 22px;
+  padding-left: 53px;
+}
+
+.contacts__icons {
+  margin-top: 22px;
+  margin-left: 7px;
+}
+
+.contacts__icons a {
+  font-family: 'WebSymbolsLigaRegular';
+  display: inline-block;
+  font-size: 23px;
+  margin-right: 16px;
+}
+
+.contacts__icons a:hover {
+  color: #778188;
+}

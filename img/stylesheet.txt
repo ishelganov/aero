@@ -1,0 +1,137 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-left {
+    width: 41px;
+    height: 82px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-right {
+    width: 41px;
+    height: 82px;
+    background-position: -56px -5px;
+}
+
+.sprite-contacts--geo {
+    width: 35px;
+    height: 50px;
+    background-position: -107px -5px;
+}
+
+.sprite-contacts--message {
+    width: 23px;
+    height: 17px;
+    background-position: -152px -5px;
+}
+
+.sprite-contacts__plane {
+    width: 62px;
+    height: 62px;
+    background-position: -185px -5px;
+}
+
+.sprite-dash-line {
+    width: 1140px;
+    height: 176px;
+    background-position: -5px -97px;
+}
+
+.sprite-features--airballoon {
+    width: 44px;
+    height: 65px;
+    background-position: -257px -5px;
+}
+
+.sprite-features--binoculars {
+    width: 72px;
+    height: 34px;
+    background-position: -311px -5px;
+}
+
+.sprite-features--finger {
+    width: 56px;
+    height: 58px;
+    background-position: -393px -5px;
+}
+
+.sprite-features--glasses {
+    width: 75px;
+    height: 28px;
+    background-position: -459px -5px;
+}
+
+.sprite-features--photo {
+    width: 65px;
+    height: 50px;
+    background-position: -544px -5px;
+}
+
+.sprite-instructors__photo--hover {
+    width: 160px;
+    height: 160px;
+    background-position: -5px -283px;
+}
+
+.sprite-instructors__photo1 {
+    width: 160px;
+    height: 160px;
+    background-position: -175px -283px;
+}
+
+.sprite-instructors__photo2 {
+    width: 160px;
+    height: 160px;
+    background-position: -345px -283px;
+}
+
+.sprite-instructors__photo3 {
+    width: 160px;
+    height: 160px;
+    background-position: -515px -283px;
+}
+
+.sprite-instructors__photo4 {
+    width: 160px;
+    height: 160px;
+    background-position: -685px -283px;
+}
+
+.sprite-order--question {
+    width: 40px;
+    height: 34px;
+    background-position: -619px -5px;
+}
+
+.sprite-order__man {
+    width: 15px;
+    height: 15px;
+    background-position: -669px -5px;
+}
+
+.sprite-order__phone {
+    width: 19px;
+    height: 19px;
+    background-position: -694px -5px;
+}
+
+.sprite-promo__str-down {
+    width: 18px;
+    height: 29px;
+    background-position: -723px -5px;
+}
+
+.sprite-reviews__photo1 {
+    width: 98px;
+    height: 98px;
+    background-position: -855px -283px;
+}
+
+.sprite-reviews__photo2 {
+    width: 98px;
+    height: 98px;
+    background-position: -963px -283px;
+}
